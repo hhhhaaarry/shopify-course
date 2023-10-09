@@ -1,7 +1,7 @@
 {
   "name": "shopify-theme-course",
   "version": "1.0.0",
-  "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polidario/Elizabeth_Clean/issues"
+    "url": "https://github.com/hhhhaaarry/shopify-course/issues"
   },
-  "homepage": "https://github.com/polidario/Elizabeth_Clean#readme",
+  "homepage": "https://github.com/hhhhaaarry/shopify-course#readme",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
   }
