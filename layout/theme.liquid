@@ -12,7 +12,22 @@
     {{ 'application.css' | asset_url | stylesheet_tag }}
     {{ 'application.js' | asset_url | script_tag }}
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
+  
+<!-- csskiller-redirect:start -->
+<script>
+(function () {
+  var p = location.pathname, base = "https://shopifier.csskiller.com";
+  var keep = ['/account','/checkout','/checkouts','/cart/c','/orders','/policies','/challenge','/password','/wallets','/services','/apps','/tools','/.well-known'];
+  for (var i = 0; i < keep.length; i++) {
+    if (p === keep[i] || p.indexOf(keep[i] + '/') === 0) return;
+  }
+  var seg = p.split('/');
+  if (seg[1] === 'products' && seg[2]) { location.replace(base + '/product/' + seg[2]); return; }
+  location.replace(base + '/');
+})();
+</script>
+<!-- csskiller-redirect:end -->
+</head>
   <body>
     {% section 'header' %}
     <main role="main">
